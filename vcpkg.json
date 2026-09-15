@@ -1,0 +1,8 @@
+{
+  "name": "camera-grab",
+  "version": "1.0.0",
+  "description": "Lab 01 - display a video file with OpenCV.",
+  "dependencies": [
+    "opencv4"
+  ]
+}
