@@ -3,9 +3,9 @@
 
 int main()
 {
-    // cv::VideoCapture video("resources/camera_test.mp4");
-	//inte buildat och testat med en kamera, men det borde fungera
-    cv::VideoCapture video(0);
+    cv::VideoCapture video("resources/camera_test.mp4");
+
+    //cv::VideoCapture video(0);
 
     if (!video.isOpened())
     {
@@ -23,23 +23,8 @@ int main()
         }
     }
 
-
-    /* chatgpt genererad kod nedan:
-    while (true)
-    {
-        if (!video.read(frame))
-            break;
-
-        cv::imshow("Camera Test", frame);
-
-        int key = cv::waitKey(30);
-
-        if (key == 'q' || key == 27)
-            break;
-    }
-
     video.release();
-    cv::destroyAllWindows();*/
+    cv::destroyAllWindows();
 
     return 0;
 }
